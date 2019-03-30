@@ -1,0 +1,20 @@
+Update Notes (Mar. 2, 2019)
+*Added Structure to settings.php
+*Added something to home.php
+*All of them still need work
+
+Update Notes (Feb. 26, 2019)
+*Some minor changes to the navbar
+
+Update Notes (Feb. 2, 2019)
+*Added a profile picture feature (still to be added to settings)
+*Added Search Bar (doesn't work yet)
+*Added a document for testing purposes
+
+Update Notes (Jan. 24, 2019)
+*Added foundation for the Navigation Menu
+*Added foundation for the Profile Dashboard
+
+Update Notes (Jan. 21, 2019)
+*Added login system (might add school district)
+*Added AMA Logo
