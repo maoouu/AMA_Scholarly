@@ -15,9 +15,17 @@ extract the prog-project folder inside 'htdocs' folder.
 4. Import the ama_scholarly.sql into your phpmyadmin.
 5. Test with localhost.
 
-Current Log:
-* Currently figuring out how to create the admin dashboard
-of the website.
+To-Do Notes:
+* Edit and Delete option for admin dashboard.
+* Preview Document for admin acc.
+* Profile page for user.
+* Requests page for admin.
+
+Update Notes (Mar. 30-31, 2019)
+* Fixed up bugs
+* Fixed admin upload documents
+* Created automated citation system (ver 1.0)
+* Implemented offline ver. of FontAwesome
 
 Update Notes (Mar. 28-29 2019)
 * Major changes added
