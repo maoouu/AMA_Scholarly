@@ -15,6 +15,10 @@ extract the prog-project folder inside 'htdocs' folder.
 4. Import the ama_scholarly.sql into your phpmyadmin.
 5. Test with localhost.
 
+Special Thanks:
+* Special thanks to @alaejahanog12 for helping me
+through out this development
+
 To-Do Notes:
 * Edit and Delete option for admin dashboard.
 * Preview Document for admin acc.
