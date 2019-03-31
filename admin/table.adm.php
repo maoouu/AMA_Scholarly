@@ -165,8 +165,8 @@
             "<td>" . $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'] . ", " . $row['db_authorFirstName2']. " ". $row['db_authorLastName2'] . ", " . $row['db_authorFirstName3'] . " " . $row['db_authorLastName3'] . ",..." ."</td>" . 
             "<td>" . $row['db_category'] . "</td>". 
             "<td>" . $row['db_date'] ."</td>". 
-            "<td><a href='edit.adm.php?id=" .$row['db_ID']. "'>" . "Edit" . "</a></td>" . 
-            "<td><a href='#'>" . "Delete" . "</a></td>
+            "<td><a>" . "Edit" . "</a></td>" . 
+            "<td><a>" . "Delete" . "</a></td>
             </tr></tbody>";
         }
     } else {
