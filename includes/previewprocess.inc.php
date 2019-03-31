@@ -18,6 +18,7 @@
        $_SESSION["author_quantity"] = $row['db_authorQuantity'];
        $_SESSION["preview_category"] = $row['db_category'];
        $_SESSION["preview_date_created"] = $row['db_date'];
+       $_SESSION["preview_file"] = $row['db_fileName'];
     }
     header('Location: ../preview.php');
     //echo $_SESSION['preview_ID'];
