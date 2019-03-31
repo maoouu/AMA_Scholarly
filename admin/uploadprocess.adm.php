@@ -227,8 +227,11 @@ $fileError = $_FILES['upload_document']['error'];
 $fileType = $_FILES['upload_document']['type'];
 $fileExt = explode('.', $fileName);
 $fileActualExt = strtolower(end($fileExt));
+
 // Lists an array of file extensions allowed in the website
-$allowedExt = array('pdf', 'doc', 'docx');
+// Restricting to pdf only because no browser supports,
+// document viewing other than pdf files.
+$allowedExt = array('pdf');
 
 // Checks the file's extension and size.
 // If the file conforms to all of the checks, it will be uploaded.
@@ -268,7 +271,7 @@ if (in_array($fileActualExt, $allowedExt)) {
         echo "There was an error uploading your file.";
     }
 } else {
-    echo "Error: You cannot upload files of this type.";
+    echo "Error: You cannot upload files of this type. Please upload <strong>.pdf</strong> files";
 }
     
     
