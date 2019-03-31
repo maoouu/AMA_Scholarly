@@ -30,63 +30,63 @@
                           <!-- Title (From A-Z) -->
                           <div class="column is-half">
                             <p class="title is-6">Title</p>
-                            <a class="link" href="#">A</a>
-                            <a class="link" href="#">B</a>
-                            <a class="link" href="#">C</a>
-                            <a class="link" href="#">D</a>
-                            <a class="link" href="#">E</a>
-                            <a class="link" href="#">F</a>
-                            <a class="link" href="#">G</a>
-                            <a class="link" href="#">H</a>
-                            <a class="link" href="#">I</a>
-                            <a class="link" href="#">J</a>
-                            <a class="link" href="#">K</a>
-                            <a class="link" href="#">L</a>
-                            <a class="link" href="#">M</a>
-                            <a class="link" href="#">N</a>
-                            <a class="link" href="#">O</a>
-                            <a class="link" href="#">P</a>
-                            <a class="link" href="#">Q</a>
-                            <a class="link" href="#">R</a>
-                            <a class="link" href="#">S</a>
-                            <a class="link" href="#">T</a>
-                            <a class="link" href="#">U</a>
-                            <a class="link" href="#">V</a>
-                            <a class="link" href="#">W</a>
-                            <a class="link" href="#">X</a>
-                            <a class="link" href="#">Y</a>
-                            <a class="link" href="#">Z</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=A">A</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=B">B</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=C">C</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=D">D</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=E">E</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=F">F</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=G">G</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=H">H</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=I">I</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=J">J</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=K">K</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=L">L</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=M">M</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=N">N</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=O">O</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=P">P</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=Q">Q</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=R">R</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=S">S</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=T">T</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=U">U</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=V">V</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=W">W</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=X">X</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=Y">Y</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?title=Z">Z</a>
                           </div>
 
                           <!-- Authors (From A-Z) -->
                           <div class="column is-half">
                             <p class="title is-6">Authors</p>
-                            <a class="link" href="#">A</a>
-                            <a class="link" href="#">B</a>
-                            <a class="link" href="#">C</a>
-                            <a class="link" href="#">D</a>
-                            <a class="link" href="#">E</a>
-                            <a class="link" href="#">F</a>
-                            <a class="link" href="#">G</a>
-                            <a class="link" href="#">H</a>
-                            <a class="link" href="#">I</a>
-                            <a class="link" href="#">J</a>
-                            <a class="link" href="#">K</a>
-                            <a class="link" href="#">L</a>
-                            <a class="link" href="#">M</a>
-                            <a class="link" href="#">N</a>
-                            <a class="link" href="#">O</a>
-                            <a class="link" href="#">P</a>
-                            <a class="link" href="#">Q</a>
-                            <a class="link" href="#">R</a>
-                            <a class="link" href="#">S</a>
-                            <a class="link" href="#">T</a>
-                            <a class="link" href="#">U</a>
-                            <a class="link" href="#">V</a>
-                            <a class="link" href="#">W</a>
-                            <a class="link" href="#">X</a>
-                            <a class="link" href="#">Y</a>
-                            <a class="link" href="#">Z</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=A">A</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=B">B</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=C">C</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=D">D</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=E">E</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=F">F</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=G">G</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=H">H</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=I">I</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=J">J</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=K">K</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=L">L</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=M">M</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=N">N</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=O">O</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=P">P</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=Q">Q</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=R">R</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=S">S</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=T">T</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=U">U</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=V">V</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=W">W</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=X">X</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=Y">Y</a>
+                            <a class="link" href="includes/browser_preview-process.inc.php?author=Z">Z</a>
                           </div>
 
                           <!-- Categories (In Alphabetical Order) -->
@@ -97,9 +97,9 @@
                                 $sql = "SELECT db_category FROM Metadata ORDER BY db_category ASC";
                                 $query = mysqli_query($conn, $sql);
 
-                                while ($row = mysqli_fetch_array($query)) {
+                                while ($row = mysqli_fetch_array($query)) { //add a counting feature
                                   $categories = $row['db_category'];
-                                  echo "<li><a class='link' href=''>" . $categories . "</a></li>";
+                                  echo "<li><a class='link' href='browser_preview-process.php?category=$categories'>" . $categories . "</a></li>";
                                 }
                               ?>
                             </ul>
