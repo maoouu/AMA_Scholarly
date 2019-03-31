@@ -11,7 +11,7 @@
                         <p class="title is-6"><?php echo $_SESSION["preview_title"]; ?></p> <hr><!-- Insert php document title -->
                         <!-- Placeholder Thumbnail -->
                         <figure class="image is-1by1">
-                            <a href="pdfs/ResearchPaperJuan.pdf#toolbar=0&navpanes=0"><img src="https://via.placeholder.com/100x150.png?text=OwO"></a> <!-- Add document location soon -->
+                            <a href="pdfs/<?php echo $_SESSION["preview_file"]; ?>#toolbar=0&navpanes=0"><img src="https://via.placeholder.com/100x150.png?text=OwO"></a> <!-- Add document location soon -->
                         </figure> <br>
                         
                     </div>
