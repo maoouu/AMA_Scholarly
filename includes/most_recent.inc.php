@@ -11,6 +11,10 @@
         $row_Category = $row['db_category'];
         $row_Date = $row['db_date'];
 
+        if  (strlen($row_Title) > 46) {
+            $row_Title = substr($row_Title, 0, 45) . "...";
+        }
+
         echo "
         <div class='column card is-two-fifths has-text-centered'>
            <div class='card-content'>
@@ -41,5 +45,7 @@
         //echo $row_Author;
         //echo $row_Category;
         //echo $row_Date;
+
+        
     }
 ?>
