@@ -11,6 +11,10 @@
         $row_Date = $row['db_date'];
         $row_Likes = $row['db_likes'];
 
+        if  (strlen($row_Title) > 46) {
+            $row_Title = substr($row_Title, 0, 45) . "...";
+        }
+
         echo "
         <div class='column card is-two-fifths card has-text-centered'>
            <div class='card-content'>
