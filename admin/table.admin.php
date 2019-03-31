@@ -18,5 +18,18 @@
     <?php include 'nav.adm.php'; ?>
     
     <?php include 'table.dashboard.adm.php'; ?>
+
+    <!-- Modal for edit button -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <!-- Bulma element goes here -->
+      </div>
+      <button class="modal-close is-large" aria-aria-label="close"></button>
+    </div>
+
+    <script>
+      
+    </script>
   </body>
 </html>
