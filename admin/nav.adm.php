@@ -39,7 +39,7 @@
               ?>
             </div>
               <div class="navbar-link">
-                <a href="profile.php" style="color:inherit;">
+                <a style="color:inherit;">
                   <?php
                   echo $_SESSION['fullname'];
                   ?>
@@ -48,8 +48,6 @@
 
               <!-- Dropdown Menu -->
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="requests.adm.php">Requests</a>
-                <hr class="navbar-divider">
                 <a class="navbar-item" href="../includes/logout.inc.php">Logout</a>
               </div>
 

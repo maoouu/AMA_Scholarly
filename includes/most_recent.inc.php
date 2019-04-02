@@ -9,7 +9,8 @@
         $row_ID = $row['db_ID'];
         $row_Title = $row['db_title'];
         $row_Category = $row['db_category'];
-        $row_Date = $row['db_date'];
+        $row_Date = new DateTime($row['db_date']);
+        $document_date = date_format($row_Date, "M. Y");
 
         if  (strlen($row_Title) > 46) {
             $row_Title = substr($row_Title, 0, 45) . "...";
@@ -34,7 +35,7 @@
                 </p>
                 <p class='card-footer-item'>"
                     
-                   . time_elapsed_string($row_Date) .
+                   . $document_date .
                     
                 "</p>
            </footer>

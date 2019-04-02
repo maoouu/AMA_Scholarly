@@ -22,6 +22,12 @@
     <!-- Javascript for edit -->
     <script>
 
+      function showDetails($document_ID) {
+        var elementID = "show_" + $document_ID;
+        // This will open and close the modal
+        document.getElementById(elementID).classList.toggle("is-active");
+      }
+
       function showEdit($document_ID) {
         var elementID = "edit_" + $document_ID;
         // This will open and close the modal

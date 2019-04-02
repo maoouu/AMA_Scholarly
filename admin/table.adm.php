@@ -153,24 +153,55 @@
     if ($rowCount >  0) {
         while ($row = mysqli_fetch_array($query)) {
 
+            $unformattedDate = new DateTime($row['db_date']);
+
             $document_ID = $row['db_ID'];
             $document_title = $row['db_title'];
             $document_author = $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'];
             $document_category = $row['db_category'];
-            
+            $document_date = date_format($unformattedDate, "M. Y");
             // switch for authors
 
 
             // Table Content
             echo 
             "<tbody><tr>
-            <td><a href='previewprocess.adm.php?id=".$row['db_ID']."'>" . $row['db_title'] . "</a></td>" .
+            <td><a onclick='showDetails($document_ID)'>" . $row['db_title'] . "</a></td>" .
             "<td>" . $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'] . ", " . $row['db_authorFirstName2']. " ". $row['db_authorLastName2'] . ", " . $row['db_authorFirstName3'] . " " . $row['db_authorLastName3'] . ",..." ."</td>" . 
             "<td>" . $row['db_category'] . "</td>". 
             "<td>" . $row['db_date'] ."</td>". 
             "<td><a onclick='showEdit($document_ID)'>" . "Edit" . "</a></td>" . 
             "<td><a onclick='showDelete($document_ID)'>" . "Delete" . "</a></td>
             </tr></tbody>";
+
+            // Document Details
+            echo "
+            
+            <!-- Modal for document preview -->
+            <div id='show_$document_ID' class='modal'>
+            <div class='modal-background'></div>
+            <div class='modal-content'>
+                <!-- Bulma element goes here -->
+
+                <div class='card'>
+                    <div class='card-content'>
+                        <h6 class='title is-6'>Details</h6> <hr>
+
+                        <label class='label'>Title: </label> 
+                        <p>$document_title</p> <br>
+                        <label class='label'>Authors: </label> 
+                        <p>$document_author</p> <br>
+                        <label class='label'>Category: </label> 
+                        <p>$document_category</p> <br>
+                        <label class='label'>Date Created: </label> 
+                        <p>$document_date</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class='modal-close is-large' aria-aria-label='close' onclick='showDetails($document_ID)'></button>
+            </div>
+            ";
 
             // Edit
             echo 
@@ -188,7 +219,7 @@
                         <label class='label'>Edit Title:</label>
                         <div class='field'>
                             <div class='control'>
-                                <input type='text' class='input' name='edit_title' placeholder='$document_title'>
+                                <input type='text' class='input' name='edit_title' placeholder='$document_title' required>
                             </div>
                         </div>
                     </div>
@@ -208,7 +239,7 @@
                         <label class='label'>Edit Category:</label>
                         <div class='field'>
                             <div class='control'>
-                                <input type='text' class='input' name='edit_category' placeholder='$document_category'>
+                                <input type='text' class='input' name='edit_category' placeholder='$document_category' required>
                             </div>
                         </div>
                     </div>
@@ -216,7 +247,7 @@
                     <!-- Buttons -->
                     <div class='field is-grouped'>
                         <div class='control'>
-                            <button id='submit' class='button is-link' type='submit' name='btnsubmit' disabled>Submit</button>
+                            <button id='submit' class='button is-link' type='submit' name='btnsubmit'>Submit</button>
                         </div>
                         <div class='control'>
                             <a class='button is-text' onclick='showEdit($document_ID)'>Cancel</a>

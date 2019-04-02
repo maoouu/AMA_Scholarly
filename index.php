@@ -2,7 +2,7 @@
 
   session_start();
   if (isset($_SESSION["ID"])) {
-    header('Location: home.php');
+    header('Location: home');
   }
 
 ?>
@@ -48,7 +48,7 @@
                 <button class="button is-link" type="submit" name="btnsubmit">Login</button>
               </div>
               <div class="control">
-                <a class="button is-text"href="signup.php">Signup</a>
+                <a class="button is-text"href="signup">Signup</a>
               </div>
             </div>
 

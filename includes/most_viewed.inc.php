@@ -1,5 +1,5 @@
 <?php
-    $sql = "SELECT db_ID, db_title, db_category, db_date, db_likes FROM Metadata ORDER BY db_likes DESC LIMIT 4";
+    $sql = "SELECT db_ID, db_title, db_category, db_date, db_views FROM Metadata ORDER BY db_views DESC LIMIT 4";
 
     $query = mysqli_query($conn, $sql);
 
@@ -9,7 +9,13 @@
         $row_Title = $row['db_title'];
         $row_Category = $row['db_category'];
         $row_Date = $row['db_date'];
-        $row_Likes = $row['db_likes'];
+        $row_views = $row['db_views'];
+
+        if ($row_views > 1) {
+            $row_views .= " views";
+        } else {
+            $row_views .= " view";
+        }
 
         if  (strlen($row_Title) > 46) {
             $row_Title = substr($row_Title, 0, 45) . "...";
@@ -32,7 +38,7 @@
                 </p>
                 <p class='card-footer-item'>"
                     
-                   . $row_Likes . " likes" .
+                   . $row_views .
                     
                 "</p>
            </footer>

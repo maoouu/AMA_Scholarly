@@ -6,6 +6,10 @@
     $id = $_GET['id'];
     //$_SESSION['preview_ID'] = $id;
 
+    // simple hit/view mechanic
+    $view_sql = "UPDATE Metadata SET db_views = db_views+1 WHERE db_ID = '$id'";
+    mysqli_query($conn, $view_sql);
+    
     $sql = "SELECT * FROM Metadata WHERE db_ID = '$id'";
 
     $query = mysqli_query($conn, $sql);

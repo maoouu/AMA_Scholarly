@@ -77,7 +77,7 @@
 
           <br>
 
-          <!-- Profile Picture feature (beta) -->
+          <!-- Profile Picture feature (alpha) -->
           <label class="label">Display Picture (Optional)</label>
           <div class="file has-name">
             <label class="file-label">

@@ -40,7 +40,7 @@
         if ($_SESSION["USN"] == "Admin") {
           header('Location: ../admin/table.admin.php?sort=Title&order=ASC');
         } else {
-          header('Location: ../home.php');
+          header('Location: ../home');
         }
         ###################################
         ###################################

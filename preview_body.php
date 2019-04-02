@@ -11,7 +11,7 @@
                         <p class="title is-6"><?php echo $_SESSION["preview_title"]; ?></p> <hr><!-- Insert php document title -->
                         <!-- Placeholder Thumbnail -->
                         <figure class="image is-1by1">
-                            <a href="pdfs/<?php echo $_SESSION["preview_file"]; ?>#toolbar=0&navpanes=0"><img src="https://via.placeholder.com/100x150.png?text=OwO"></a> <!-- Add document location soon -->
+                            <a href="pdfs/<?php echo $_SESSION["preview_file"] . "#toolbar=0&navpanes=0";?>"><img src="https://via.placeholder.com/100x150.png?text=OwO"></a> <!-- Add document location soon -->
                         </figure> <br>
                         
                     </div>
@@ -35,11 +35,11 @@
                             db_authorFirstName3, db_authorLastName3,
                             db_authorFirstName4, db_authorLastName4,
                             db_authorFirstName5, db_authorLastName5,
-                            db_authorFirstName6, db_authorLastName6, db_citationInput FROM Metadata WHERE db_ID = '$id'";
-
+                            db_authorFirstName6, db_authorLastName6, db_citationInput, db_views FROM Metadata WHERE db_ID = '$id'";
                             $query = mysqli_query($conn, $sql);
                             
                             while ($row = mysqli_fetch_array($query)) {
+                                $views = $row['db_views'];
                                 $citation = $row['db_citationInput'];
                                 switch ($_SESSION["author_quantity"]) {
                                     case '1':
@@ -93,8 +93,7 @@
                             <button class="button is-small"  onclick="copyText()">Copy Text</button>
                         </div> 
                         <br>
-
-                        <!-- Make a like function here -->
+                        <?php if($views == 1) {echo $views . " view";} else {echo $views . " views";} ?> 
                     </div>
 
                 </div>

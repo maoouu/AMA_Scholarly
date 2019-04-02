@@ -26,14 +26,14 @@
       <div class="column">
         <!-- Title -->
         <div class="column">
-           <h1 class="title is-4">Most Liked</h1>
+           <h1 class="title is-4">Most Viewed</h1>
         </div>
             
         <div class="section">
           <div class="columns is-multiline is-centered">
 
             <?php
-              include 'includes/most_liked.inc.php';
+              include 'includes/most_viewed.inc.php';
             ?>
           </div>
         </div>

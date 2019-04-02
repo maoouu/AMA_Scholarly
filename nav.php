@@ -5,27 +5,35 @@
 }
 </style>
 
-<nav class="navbar has-shadow is-spaced">
+<nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="home.php">
         <img src="img/book.jpeg" alt="Website Logo">
       </a>
+
+      <!-- Navbar burger -->
+      <a role="button" class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+
     </div>
     <div id="navMenuIndex" class="navbar-menu">
 
         <div class="navbar-start">
           <!-- Page Navigation Menu -->
-          <a class="navbar-item" href="Home">Home</a>
+          <a class="navbar-item" href="home">Home</a>
 
           <!--Dropdown Browsing-->
-          <a class="navbar-item" href="Browse">Browse</a>
+          <a class="navbar-item" href="browse">Browse</a>
                               
           <!-- Contacts -->
-          <a class="navbar-item" href="Contacts">Contacts</a>
+          <a class="navbar-item" href="contacts">Contacts</a>
 
           <!-- Search Bar (Still at work)--> 
-          <div class="navbar-item field is-grouped">
+          <div class="navbar-item field is-grouped is-flex-desktop">
             <p class="control">
               <input class="input is-rounded" type="text" name="search" placeholder="Search... (still in development~)" maxlength="255">
             </p>
@@ -56,7 +64,7 @@
                     ?>
             </div>
               <div class="navbar-link">
-                <a href="profile.php" style="color:inherit;">
+                <a href="profile" style="color:inherit;">
                   <?php
                   echo $_SESSION['fullname'];
                   ?>
@@ -65,9 +73,7 @@
 
               <!-- Dropdown Menu -->
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="Profile">Profile</a>
-                <hr class="navbar-divider">
-                <a class="navbar-item" href="includes/logout.inc.php">Logout</a>
+                <a class="navbar-item" href="includes/logout.inc">Logout</a>
               </div>
 
           </div>

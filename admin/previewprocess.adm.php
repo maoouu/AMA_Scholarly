@@ -21,5 +21,5 @@
 
        
     }
-    header('Location: preview.adm.php');
+    header('Location: preview.adm');
 ?>
