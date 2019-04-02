@@ -153,10 +153,13 @@
     if ($rowCount >  0) {
         while ($row = mysqli_fetch_array($query)) {
 
-            //$document_ID = $row['db_ID'];
-            //$document_title = $row['db_title'];
-            //$document_author = $row['db_author'];
-            //$document_category = $row['db_category'];
+            $document_ID = $row['db_ID'];
+            $document_title = $row['db_title'];
+            $document_author = $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'];
+            $document_category = $row['db_category'];
+            
+            // switch for authors
+
 
             // Table Content
             echo 
@@ -165,9 +168,89 @@
             "<td>" . $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'] . ", " . $row['db_authorFirstName2']. " ". $row['db_authorLastName2'] . ", " . $row['db_authorFirstName3'] . " " . $row['db_authorLastName3'] . ",..." ."</td>" . 
             "<td>" . $row['db_category'] . "</td>". 
             "<td>" . $row['db_date'] ."</td>". 
-            "<td><a>" . "Edit" . "</a></td>" . 
-            "<td><a>" . "Delete" . "</a></td>
+            "<td><a onclick='showEdit($document_ID)'>" . "Edit" . "</a></td>" . 
+            "<td><a onclick='showDelete($document_ID)'>" . "Delete" . "</a></td>
             </tr></tbody>";
+
+            // Edit
+            echo 
+            "
+            <!-- Modal for edit button -->
+            <div id='edit_$document_ID' class='modal'>
+            <div class='modal-background'></div>
+            <div class='modal-content'>
+                <!-- Bulma element goes here -->
+                <div class='card'>
+                <div class='card-content'>
+                    <form action='edit.adm.php?edit_id='$document_ID' method='POST'>
+                    <!-- Edit Title -->
+                    <div class='control'>
+                        <label class='label'>Edit Title:</label>
+                        <div class='field'>
+                            <div class='control'>
+                                <input type='text' class='input' name='edit_title' placeholder='$document_title'>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Edit Author/s -->
+                    <div class='control'>
+                        <label class='label'>Edit Author (Will be available in future updates)</label>
+                        <div class='field'>
+                            <div class='control'>
+                                <input type='text' class='input' name='edit_author' placeholder='$document_author' disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Edit Category -->
+                    <div class='control'>
+                        <label class='label'>Edit Category:</label>
+                        <div class='field'>
+                            <div class='control'>
+                                <input type='text' class='input' name='edit_category' placeholder='$document_category'>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Buttons -->
+                    <div class='field is-grouped'>
+                        <div class='control'>
+                            <button id='submit' class='button is-link' type='submit' name='btnsubmit' disabled>Submit</button>
+                        </div>
+                        <div class='control'>
+                            <a class='button is-text' onclick='showEdit($document_ID)'>Cancel</a>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                </div>
+                <!--#########################-->
+            </div>
+            <button class='modal-close is-large' aria-aria-label='close' onclick='showEdit($document_ID)'></button>
+            </div>
+            <!--#########################-->
+            ";
+
+            //Delete
+            echo "
+            
+            <!-- Modal for delete button -->
+            <div id='delete_$document_ID' class='modal'>
+            <div class='modal-background'></div>
+            <div class='modal-content'>
+                <!-- Bulma element goes here -->
+                <div class='card'>
+                <div class='card-content'>
+                    
+                </div>
+                </div>
+                <!--#########################-->
+            </div>
+            <button class='modal-close is-large' aria-aria-label='close' onclick='showDelete($document_ID)'></button>
+            </div>
+            <!--#########################-->
+            ";
         }
     } else {
         echo "<tr><td>No results found</td></tr>";
