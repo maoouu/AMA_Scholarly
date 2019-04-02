@@ -65,7 +65,7 @@
 
               <!-- Dropdown Menu -->
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="profile.php">Profile</a>
+                <a class="navbar-item" href="Profile">Profile</a>
                 <hr class="navbar-divider">
                 <a class="navbar-item" href="includes/logout.inc.php">Logout</a>
               </div>
