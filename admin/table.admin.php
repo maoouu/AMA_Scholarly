@@ -19,17 +19,20 @@
     
     <?php include 'table.dashboard.adm.php'; ?>
 
-    <!-- Modal for edit button -->
-    <div class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <!-- Bulma element goes here -->
-      </div>
-      <button class="modal-close is-large" aria-aria-label="close"></button>
-    </div>
-
+    <!-- Javascript for edit -->
     <script>
-      
+
+      function showEdit($document_ID) {
+        var elementID = "edit_" + $document_ID;
+        // This will open and close the modal
+        document.getElementById(elementID).classList.toggle("is-active");
+      }
+
+      function showDelete($document_ID) {
+        var elementID = "delete_" + $document_ID;
+        // This will open and close the modal
+        document.getElementById(elementID).classList.toggle("is-active");
+      }
     </script>
   </body>
 </html>
