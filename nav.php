@@ -27,7 +27,7 @@
           <!-- Search Bar (Still at work)--> 
           <div class="navbar-item field is-grouped">
             <p class="control">
-              <input class="input is-rounded" type="text" name="search" placeholder="Search..." maxlength="255">
+              <input class="input is-rounded" type="text" name="search" placeholder="Search... (still in development~)" maxlength="255">
             </p>
 
             <p class="control">
