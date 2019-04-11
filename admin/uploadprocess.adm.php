@@ -212,7 +212,7 @@ switch ($author_count) {
         }
         break;
     default:
-        echo "<script>alert('Unknown Number of Authors:'); location.href='upload.dashboard.adm.php';</script>";
+        echo "<script>alert('Unknown Number of Authors:'); //location.href='upload.dashboard.adm.php';</script>";
         break;
 }
 
@@ -237,7 +237,7 @@ $allowedExt = array('pdf');
 // If the file conforms to all of the checks, it will be uploaded.
 if (in_array($fileActualExt, $allowedExt)) {
     if ($fileError == 0) {
-        if ($fileSize < 10000000) {
+        if ($fileSize < 10000000000) {
 
             $fileNameNew = $documentName . "." . $fileActualExt;
             $fileDestination = '../pdfs/' . $fileNameNew;
@@ -268,7 +268,7 @@ if (in_array($fileActualExt, $allowedExt)) {
             echo "Your file is too big.";
         }
     } else {
-        echo "There was an error uploading your file.";
+        echo "There was an error uploading your file. " . $fileError;
     }
 } else {
     echo "Error: You cannot upload files of this type. Please upload <strong>.pdf</strong> files";

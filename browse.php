@@ -89,7 +89,7 @@
                             <a class="link" href="includes/browser_preview-process.inc.php?author=Z">Z</a>
                           </div>
 
-                          <!-- Categories (In Alphabetical Order) -->
+                          <?php /*<!-- Categories (In Alphabetical Order) -->
                           <div class="column is-half">
                             <p class="title is-6">Categories</p>
                             <ul style="list-style-type:disc; padding-left:5%;">
@@ -99,12 +99,12 @@
 
                                 while ($row = mysqli_fetch_array($query)) { //add a counting feature
                                   $categories = $row['db_category'];
-                                  echo "<li><a class='link' href='browser_preview-process.php?category=$categories'>" . $categories . "</a></li>";
+                                  echo "<li><a class='link' href='includes/browser_preview-process.inc.php?category=$categories'>" . $categories . "</a></li>";
                                 }
                               ?>
                             </ul>
                           </div>
-
+                          */ ?>
                           <div class="column is-half">
                             <p class="subtitle is-6">(More browsing options in future updates)</p>
                           </div>

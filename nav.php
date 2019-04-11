@@ -24,13 +24,13 @@
 
         <div class="navbar-start">
           <!-- Page Navigation Menu -->
-          <a class="navbar-item" href="home">Home</a>
+          <a class="navbar-item" href="Home">Home</a>
 
           <!--Dropdown Browsing-->
-          <a class="navbar-item" href="browse">Browse</a>
+          <a class="navbar-item" href="Browse">Browse</a>
                               
           <!-- Contacts -->
-          <a class="navbar-item" href="contacts">Contacts</a>
+          <a class="navbar-item" href="Contacts">Contacts</a>
 
           <!-- Search Bar (Still at work)--> 
           <div class="navbar-item field is-grouped is-flex-desktop">

@@ -21,7 +21,7 @@
            <div class='card-content'>
 
                 <figure class='image is-1by1'>
-                    <a href='includes/previewprocess.inc.php?id=$row_ID'><img src='https://via.placeholder.com/100x150.png'></a>
+                    <a href='includes/previewprocess.inc.php?id=$row_ID'><img src='img/100x150.png'></a>
                 </figure> <br>
 
                 <a class='title is-6' href='includes/previewprocess.inc.php?id=$row_ID'>

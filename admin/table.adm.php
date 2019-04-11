@@ -247,7 +247,7 @@
                     <!-- Buttons -->
                     <div class='field is-grouped'>
                         <div class='control'>
-                            <button id='submit' class='button is-link' type='submit' name='btnsubmit'>Submit</button>
+                            <button id='submit' class='button is-link' type='submit' name='btnsubmit' disabled>Submit</button>
                         </div>
                         <div class='control'>
                             <a class='button is-text' onclick='showEdit($document_ID)'>Cancel</a>
@@ -273,7 +273,7 @@
                 <!-- Bulma element goes here -->
                 <div class='card'>
                 <div class='card-content'>
-                    
+                    <p class='title is-6'> Not available to delete in current version </p>
                 </div>
                 </div>
                 <!--#########################-->
