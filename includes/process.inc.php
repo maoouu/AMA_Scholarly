@@ -33,6 +33,7 @@
           $_SESSION["USN"] = $row['user_USN'];
           $_SESSION["fullname"] = $row['user_fullname'];
           $_SESSION["email"] = $row['user_email'];
+          $_SESSION["date"] = $row['dateadded'];
         }
         ####################################
         // if user is admin
