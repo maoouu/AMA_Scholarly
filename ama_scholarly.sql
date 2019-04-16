@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 31, 2019 at 06:04 PM
+-- Generation Time: Apr 16, 2019 at 04:34 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -45,7 +45,7 @@ CREATE TABLE `Metadata` (
   `db_authorLastName6` varchar(255) NOT NULL,
   `db_category` varchar(255) NOT NULL,
   `db_authorQuantity` int(11) NOT NULL,
-  `db_likes` int(11) NOT NULL,
+  `db_views` int(11) NOT NULL,
   `db_citationMode` int(11) NOT NULL,
   `db_citationInput` varchar(355) NOT NULL,
   `db_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -56,14 +56,14 @@ CREATE TABLE `Metadata` (
 -- Dumping data for table `Metadata`
 --
 
-INSERT INTO `Metadata` (`db_ID`, `db_title`, `db_authorFirstName1`, `db_authorLastName1`, `db_authorFirstName2`, `db_authorLastName2`, `db_authorFirstName3`, `db_authorLastName3`, `db_authorFirstName4`, `db_authorLastName4`, `db_authorFirstName5`, `db_authorLastName5`, `db_authorFirstName6`, `db_authorLastName6`, `db_category`, `db_authorQuantity`, `db_likes`, `db_citationMode`, `db_citationInput`, `db_date`, `db_fileName`) VALUES
+INSERT INTO `Metadata` (`db_ID`, `db_title`, `db_authorFirstName1`, `db_authorLastName1`, `db_authorFirstName2`, `db_authorLastName2`, `db_authorFirstName3`, `db_authorLastName3`, `db_authorFirstName4`, `db_authorLastName4`, `db_authorFirstName5`, `db_authorLastName5`, `db_authorFirstName6`, `db_authorLastName6`, `db_category`, `db_authorQuantity`, `db_views`, `db_citationMode`, `db_citationInput`, `db_date`, `db_fileName`) VALUES
 (1, 'Effects of Chuchu Balachuchu', 'James', 'Doe', '', '', '', '', '', '', '', '', '', '', 'Computer Science', 1, 15, 0, '', '2019-03-08 20:16:24', ''),
 (2, 'A Take on Anxiety: It\'s Causes and Effects on Students', 'James', 'Dean', '', '', '', '', '', '', '', '', '', '', 'Humanities', 1, 67, 0, '', '2019-03-09 15:31:05', ''),
-(3, 'Black Holes', 'Audrey', 'Hepburn', '', '', '', '', '', '', '', '', '', '', 'Astronomy', 1, 100, 0, '', '2019-03-09 15:55:00', ''),
-(4, 'Understanding Video Game Addiction', 'Vic', 'Fuentes', '', '', '', '', '', '', '', '', '', '', 'Video Games', 1, 8, 0, '', '2019-03-09 16:09:20', ''),
-(10, 'Generalized Anxiety Disorder: Factors To Consider In Understanding Grade 12 Students With Generalized Anxiety Disorder And Coping With Anxiety', 'Alaejah', 'Anog', 'Maria Jelica', 'Gozo', 'Shania Janelle', 'Mauzar', '', '', '', '', '', '', 'Human Behavior', 3, 0, 2, 'Anog, A., Gozo, M. et al. Generalized Anxiety Disorder: Factors To Consider In Understanding Grade 12 Students With Generalized Anxiety Disorder And Coping With Anxiety Thesis. AMA Computer College Lucena, 2019.', '2019-03-30 21:12:40', 'Generalized Anxiety Disorder: Factors To Consider In Understanding Grade 12 Students With Generalized Anxiety Disorder And Coping With Anxiety.docx'),
+(3, 'Black Holes', 'Audrey', 'Hepburn', '', '', '', '', '', '', '', '', '', '', 'Astronomy', 1, 101, 0, '', '2019-03-09 15:55:00', ''),
+(4, 'Understanding Video Game Addiction', 'Vic', 'Fuentes', '', '', '', '', '', '', '', '', '', '', 'Video Games', 1, 9, 0, '', '2019-03-09 16:09:20', ''),
+(10, 'Generalized Anxiety Disorder: Factors To Consider In Understanding Grade 12 Students With Generalized Anxiety Disorder And Coping With Anxiety', 'Alaejah', 'Anog', 'Maria Jelica', 'Gozo', 'Shania Janelle', 'Mauzar', '', '', '', '', '', '', 'Human Behavior', 3, 3, 2, 'Anog, A., Gozo, M. et al. Generalized Anxiety Disorder: Factors To Consider In Understanding Grade 12 Students With Generalized Anxiety Disorder And Coping With Anxiety Thesis. AMA Computer College Lucena, 2019.', '2019-03-30 21:12:40', 'Generalized Anxiety Disorder: Factors To Consider In Understanding Grade 12 Students With Generalized Anxiety Disorder And Coping With Anxiety.docx'),
 (11, 'Reason For Non Usage Of Social Media Perceived By Students In Ransohan Integrated School', 'Ken Ivan', 'Amparo', 'Prince Emmanuel', 'Anggulo', 'John Kennedy', 'Asia', 'Mark Jason', 'Catalona', 'Von Irish', 'Dalumpienes', 'Jericho', 'Tamayo', 'Technology', 6, 0, 1, 'Amparo, K., Anggulo, P. AsiaJ. CatalonaM. DalumpienesV. TamayoJ. (2019). Reason For Non Usage Of Social Media Perceived By Students In Ransohan Integrated School. AMA Computer College Lucena, Lucena City, Philippines.', '2019-03-30 21:49:14', 'Reason For Non Usage Of Social Media Perceived By Students In Ransohan Integrated School.pdf'),
-(12, 'RIMS (Ragit\\\'s Inventory Management System)', 'John Matthew', 'Batilo', 'Ron Ivan', 'Barola', 'Daniel', 'Cantos', 'Joshua', 'Ragit', 'Carl', 'Ramos', '', '', 'System', 5, 0, 1, 'Batilo, J., Barola, R. Cantos, D. Ragit, J. Ramos, C. (2019). RIMS (Ragit\'s Inventory Management System). AMA Computer College Lucena, Lucena City, Philippines.', '2019-03-30 22:11:08', 'RIMS (Ragit\\\'s Inventory Management System).docx');
+(12, 'RIMS (Ragit\\\'s Inventory Management System)', 'John Matthew', 'Batilo', 'Ron Ivan', 'Barola', 'Daniel', 'Cantos', 'Joshua', 'Ragit', 'Carl', 'Ramos', '', '', 'System', 5, 5, 1, 'Batilo, J., Barola, R. Cantos, D. Ragit, J. Ramos, C. (2019). RIMS (Ragit\'s Inventory Management System). AMA Computer College Lucena, Lucena City, Philippines.', '2019-03-30 22:11:08', 'RIMS (Ragit\\\'s Inventory Management System).docx');
 
 -- --------------------------------------------------------
 
@@ -91,6 +91,17 @@ INSERT INTO `user_tbl` (`ID`, `user_fullname`, `user_USN`, `user_email`, `user_p
 (8, 'John Doe Johnson', '12312312312', 'johndoe@microsoft.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-03-24 12:14:57'),
 (9, 'Admin', 'Admin', 'admin@secure.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-03-24 12:35:23');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `usn_collection`
+--
+
+CREATE TABLE `usn_collection` (
+  `ID` int(11) NOT NULL,
+  `USN` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Indexes for dumped tables
 --
@@ -108,6 +119,12 @@ ALTER TABLE `user_tbl`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexes for table `usn_collection`
+--
+ALTER TABLE `usn_collection`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -122,6 +139,12 @@ ALTER TABLE `Metadata`
 --
 ALTER TABLE `user_tbl`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `usn_collection`
+--
+ALTER TABLE `usn_collection`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
