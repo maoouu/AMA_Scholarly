@@ -1,32 +1,34 @@
-<div class="column level is-one-fifth">
-    <div class="level-left">
-    <div class="card">
-  <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-left">
-        <figure class="image is-48x48">
-          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+<div class="container">
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="column">
+        <figure class="image  is-128x128">
+          <img class="is-rounded" src="<?php 
+          $imgFile = "profile-pic/" . $_SESSION['fullname'] . ".jpg";
+          $defaultFile = "profile-pic/default.png";
+          if (file_exists($imgFile)) {
+            echo $imgFile;
+          } else {
+            echo $defaultFile;
+          }
+          ?>" alt="profile picture">
         </figure>
       </div>
-      <div class="media-content">
-        <p class="title is-4">John Smith</p>
-        <p class="subtitle is-6">@johnsmith</p>
+      <div class="column">
+        <h1 class="title is-4" style="text-align:left;"><?php echo $_SESSION['fullname']; ?></h1>
+        <p class="subtitle is-6"style="text-align:left;">Joined <?php $dateTime = new DateTime($_SESSION['date']); echo date_format($dateTime, "M. d, Y") ?></p>
       </div>
     </div>
+  </section>
 
-    <div class="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-      <a href="#">#css</a> <a href="#">#responsive</a>
-      <br>
-      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-    </div>
+  <div class="column">
+    <aside class="menu">
+      <p class="menu-label">User Menu</p>
+      <ul class="menu-list">
+        <li><a>Requests</a></li>
+        <li><a>Settings</a></li>
+      </ul>
+    </aside>
   </div>
-</div>
-    </div>
+
 </div>
