@@ -1,6 +1,8 @@
 # AMA_Scholarly
-a project for AMA's digital library for research papers.
+this is a project conceptualized to help AMACC Lucena's thesis collection
+to be accessed by students through a website.
 
+Features:
 * Made with Bulma CSS Framework (visit https://bulma.io/ for more details)
 
 Requirements:
