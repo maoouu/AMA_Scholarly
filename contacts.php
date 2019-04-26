@@ -17,7 +17,7 @@
     <?php include 'nav.php' ?>
 
     <!-- Contacts Section -->
-    <div class="section">
+    <main class="section">
       <div class="container">
         <div class="column is-main-content">
           <h1 class="title is-4">Contacts</h1> <br>
@@ -63,6 +63,6 @@
 
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
