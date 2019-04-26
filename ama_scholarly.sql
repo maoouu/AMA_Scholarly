@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 16, 2019 at 04:34 PM
+-- Generation Time: Apr 26, 2019 at 02:58 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -63,7 +63,7 @@ INSERT INTO `Metadata` (`db_ID`, `db_title`, `db_authorFirstName1`, `db_authorLa
 (4, 'Understanding Video Game Addiction', 'Vic', 'Fuentes', '', '', '', '', '', '', '', '', '', '', 'Video Games', 1, 9, 0, '', '2019-03-09 16:09:20', ''),
 (10, 'Generalized Anxiety Disorder: Factors To Consider In Understanding Grade 12 Students With Generalized Anxiety Disorder And Coping With Anxiety', 'Alaejah', 'Anog', 'Maria Jelica', 'Gozo', 'Shania Janelle', 'Mauzar', '', '', '', '', '', '', 'Human Behavior', 3, 3, 2, 'Anog, A., Gozo, M. et al. Generalized Anxiety Disorder: Factors To Consider In Understanding Grade 12 Students With Generalized Anxiety Disorder And Coping With Anxiety Thesis. AMA Computer College Lucena, 2019.', '2019-03-30 21:12:40', 'Generalized Anxiety Disorder: Factors To Consider In Understanding Grade 12 Students With Generalized Anxiety Disorder And Coping With Anxiety.docx'),
 (11, 'Reason For Non Usage Of Social Media Perceived By Students In Ransohan Integrated School', 'Ken Ivan', 'Amparo', 'Prince Emmanuel', 'Anggulo', 'John Kennedy', 'Asia', 'Mark Jason', 'Catalona', 'Von Irish', 'Dalumpienes', 'Jericho', 'Tamayo', 'Technology', 6, 0, 1, 'Amparo, K., Anggulo, P. AsiaJ. CatalonaM. DalumpienesV. TamayoJ. (2019). Reason For Non Usage Of Social Media Perceived By Students In Ransohan Integrated School. AMA Computer College Lucena, Lucena City, Philippines.', '2019-03-30 21:49:14', 'Reason For Non Usage Of Social Media Perceived By Students In Ransohan Integrated School.pdf'),
-(12, 'RIMS (Ragit\\\'s Inventory Management System)', 'John Matthew', 'Batilo', 'Ron Ivan', 'Barola', 'Daniel', 'Cantos', 'Joshua', 'Ragit', 'Carl', 'Ramos', '', '', 'System', 5, 5, 1, 'Batilo, J., Barola, R. Cantos, D. Ragit, J. Ramos, C. (2019). RIMS (Ragit\'s Inventory Management System). AMA Computer College Lucena, Lucena City, Philippines.', '2019-03-30 22:11:08', 'RIMS (Ragit\\\'s Inventory Management System).docx');
+(12, 'RIMS (Ragit\\\'s Inventory Management System)', 'John Matthew', 'Batilo', 'Ron Ivan', 'Barola', 'Daniel', 'Cantos', 'Joshua', 'Ragit', 'Carl', 'Ramos', '', '', 'System', 5, 6, 1, 'Batilo, J., Barola, R. Cantos, D. Ragit, J. Ramos, C. (2019). RIMS (Ragit\'s Inventory Management System). AMA Computer College Lucena, Lucena City, Philippines.', '2019-03-30 22:11:08', 'RIMS (Ragit\\\'s Inventory Management System).docx');
 
 -- --------------------------------------------------------
 
@@ -88,7 +88,6 @@ INSERT INTO `user_tbl` (`ID`, `user_fullname`, `user_USN`, `user_email`, `user_p
 (1, 'John Dale Reyes', '17001388600', 'dale.reyes@hotmail.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-02-02 13:22:57'),
 (2, 'John Harvey Reyes', '18002503800', 'iamgodly13@gmail.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-02-02 14:18:05'),
 (5, 'Vincent Oliveros', '17001282700', 'jvdo319@gmail.com', '7346a84e2a9cf8c909c453e35b72866cd5237dee', '2019-02-02 14:21:40'),
-(8, 'John Doe Johnson', '12312312312', 'johndoe@microsoft.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-03-24 12:14:57'),
 (9, 'Admin', 'Admin', 'admin@secure.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-03-24 12:35:23');
 
 -- --------------------------------------------------------
@@ -99,8 +98,17 @@ INSERT INTO `user_tbl` (`ID`, `user_fullname`, `user_USN`, `user_email`, `user_p
 
 CREATE TABLE `usn_collection` (
   `ID` int(11) NOT NULL,
-  `USN` int(11) NOT NULL
+  `USN` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `usn_collection`
+--
+
+INSERT INTO `usn_collection` (`ID`, `USN`) VALUES
+(1, '17001388600'),
+(2, '17000231800'),
+(3, '12312312312');
 
 --
 -- Indexes for dumped tables
@@ -144,7 +152,7 @@ ALTER TABLE `user_tbl`
 -- AUTO_INCREMENT for table `usn_collection`
 --
 ALTER TABLE `usn_collection`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
