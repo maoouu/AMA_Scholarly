@@ -3,6 +3,16 @@
   height: 54px;
   width: 54px;
 }
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+main{
+    margin-top: 3.4em;
+}
 </style>
 
 <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
