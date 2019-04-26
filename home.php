@@ -17,6 +17,8 @@
   <body>
     <?php include 'nav.php' ?>
     
-    <?php include 'page-content.php' ?>
+    <main>
+      <?php include 'page-content.php' ?>
+    </main>
   </body>
 </html>
