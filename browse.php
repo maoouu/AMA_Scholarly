@@ -18,7 +18,7 @@
   <body>
     <?php include 'nav.php' ?>
     
-    <div class="section">
+    <main class="section">
         <div class="container">
             <div class="columns">
                 
@@ -116,6 +116,6 @@
 
             </div>
         </div>
-    </div>
+    </main>
   </body>
 </html>
