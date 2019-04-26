@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 26, 2019 at 02:58 PM
+-- Generation Time: Apr 26, 2019 at 03:44 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -88,7 +88,8 @@ INSERT INTO `user_tbl` (`ID`, `user_fullname`, `user_USN`, `user_email`, `user_p
 (1, 'John Dale Reyes', '17001388600', 'dale.reyes@hotmail.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-02-02 13:22:57'),
 (2, 'John Harvey Reyes', '18002503800', 'iamgodly13@gmail.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-02-02 14:18:05'),
 (5, 'Vincent Oliveros', '17001282700', 'jvdo319@gmail.com', '7346a84e2a9cf8c909c453e35b72866cd5237dee', '2019-02-02 14:21:40'),
-(9, 'Admin', 'Admin', 'admin@secure.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-03-24 12:35:23');
+(9, 'Admin', 'Admin', 'admin@secure.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-03-24 12:35:23'),
+(17, 'Alaejah Anog', '17000231800', 'alaejahanog12@gmail.com', '8be3c943b1609fffbfc51aad666d0a04adf83c9d', '2019-04-26 21:41:38');
 
 -- --------------------------------------------------------
 
@@ -146,7 +147,7 @@ ALTER TABLE `Metadata`
 -- AUTO_INCREMENT for table `user_tbl`
 --
 ALTER TABLE `user_tbl`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `usn_collection`
