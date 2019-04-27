@@ -6,13 +6,14 @@
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-      echo "SQL Statement Function Error";
+      echo "SQL Statement Function Error: Unable to parse USN to database";
     } else {
       mysqli_stmt_bind_param($stmt, "s", $usn);
       mysqli_stmt_execute($stmt);
       $result = mysqli_stmt_get_result($stmt);
 
-      if ($result) {
+      
+      if (mysqli_num_rows($result) >= 1) {
         return true;
       } else {
         return false;
@@ -58,7 +59,15 @@
     //Checking if USN exists in a USN database
     $globalUSN = globalUSN($usn);
 
-    if ($globalUSN == false) {
+    /*
+    if ($globalUSN) {
+      echo "Legitimate USN found in database";
+    } else {
+      echo "No USN found";
+    }
+    */
+
+    if (!($globalUSN)) {
       header('Location: ../signup.php?id=false');
     } else {
       //Checking if USN exists in a login
