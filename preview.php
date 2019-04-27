@@ -16,8 +16,10 @@
   </head>
   <body>
     <?php include 'nav.php'; ?>
-
-    <?php include 'preview_body.php'; ?>
+    
+    <main>
+      <?php include 'preview_body.php'; ?>
+    </main>
 
     <script>
       // This function copies the set citation for convenience of the user
