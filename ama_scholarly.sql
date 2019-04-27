@@ -2,10 +2,10 @@
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Apr 26, 2019 at 03:44 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.2.12
+-- Host: 127.0.0.1
+-- Generation Time: Apr 27, 2019 at 04:40 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Metadata`
+-- Table structure for table `metadata`
 --
 
-CREATE TABLE `Metadata` (
+CREATE TABLE `metadata` (
   `db_ID` int(11) NOT NULL,
   `db_title` varchar(255) NOT NULL,
   `db_authorFirstName1` varchar(255) NOT NULL,
@@ -53,10 +53,10 @@ CREATE TABLE `Metadata` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `Metadata`
+-- Dumping data for table `metadata`
 --
 
-INSERT INTO `Metadata` (`db_ID`, `db_title`, `db_authorFirstName1`, `db_authorLastName1`, `db_authorFirstName2`, `db_authorLastName2`, `db_authorFirstName3`, `db_authorLastName3`, `db_authorFirstName4`, `db_authorLastName4`, `db_authorFirstName5`, `db_authorLastName5`, `db_authorFirstName6`, `db_authorLastName6`, `db_category`, `db_authorQuantity`, `db_views`, `db_citationMode`, `db_citationInput`, `db_date`, `db_fileName`) VALUES
+INSERT INTO `metadata` (`db_ID`, `db_title`, `db_authorFirstName1`, `db_authorLastName1`, `db_authorFirstName2`, `db_authorLastName2`, `db_authorFirstName3`, `db_authorLastName3`, `db_authorFirstName4`, `db_authorLastName4`, `db_authorFirstName5`, `db_authorLastName5`, `db_authorFirstName6`, `db_authorLastName6`, `db_category`, `db_authorQuantity`, `db_views`, `db_citationMode`, `db_citationInput`, `db_date`, `db_fileName`) VALUES
 (1, 'Effects of Chuchu Balachuchu', 'James', 'Doe', '', '', '', '', '', '', '', '', '', '', 'Computer Science', 1, 15, 0, '', '2019-03-08 20:16:24', ''),
 (2, 'A Take on Anxiety: It\'s Causes and Effects on Students', 'James', 'Dean', '', '', '', '', '', '', '', '', '', '', 'Humanities', 1, 67, 0, '', '2019-03-09 15:31:05', ''),
 (3, 'Black Holes', 'Audrey', 'Hepburn', '', '', '', '', '', '', '', '', '', '', 'Astronomy', 1, 101, 0, '', '2019-03-09 15:55:00', ''),
@@ -109,16 +109,31 @@ CREATE TABLE `usn_collection` (
 INSERT INTO `usn_collection` (`ID`, `USN`) VALUES
 (1, '17001388600'),
 (2, '17000231800'),
-(3, '12312312312');
+(3, '12312312312'),
+(4, '17001372000'),
+(5, '17001373400'),
+(6, '17001370700'),
+(7, '16004783900'),
+(8, '17001355900'),
+(9, '17001451400'),
+(10, '16004762200'),
+(11, '17000156500'),
+(12, '17001360000'),
+(13, '17000576500'),
+(14, '1700169900'),
+(15, '16004677500'),
+(16, '17001284000'),
+(17, '17001669700'),
+(18, '16004759800');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `Metadata`
+-- Indexes for table `metadata`
 --
-ALTER TABLE `Metadata`
+ALTER TABLE `metadata`
   ADD PRIMARY KEY (`db_ID`);
 
 --
@@ -138,9 +153,9 @@ ALTER TABLE `usn_collection`
 --
 
 --
--- AUTO_INCREMENT for table `Metadata`
+-- AUTO_INCREMENT for table `metadata`
 --
-ALTER TABLE `Metadata`
+ALTER TABLE `metadata`
   MODIFY `db_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
@@ -153,7 +168,7 @@ ALTER TABLE `user_tbl`
 -- AUTO_INCREMENT for table `usn_collection`
 --
 ALTER TABLE `usn_collection`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
