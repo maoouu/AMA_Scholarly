@@ -26,8 +26,8 @@
                     <div class="column">
                     <nav class="breadcrumb" aria-label="breadcrumbs">
                       <ul>
-                        <li><a href="#">Home</a></li>
-                        <li class="is-active"><a href="#">Browse</a></li>
+                        <li><a href="home">Home</a></li>
+                        <li class="is-active"><a>Browse</a></li>
                       </ul>
                     </nav>
                         <div class="columns is-multiline" style="padding-top:2%; padding-bottom:2%; padding-left:5%; padding-right:5%; background-color:white;">
@@ -121,5 +121,8 @@
             </div>
         </div>
     </main>
+
+    <?php include 'footer.php' ?>
+
   </body>
 </html>
