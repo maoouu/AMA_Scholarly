@@ -17,8 +17,9 @@
   <body>
     <?php include 'nav.adm.php'; ?>
     
-    <?php include 'table.dashboard.adm.php'; ?>
-
+    <main>
+      <?php include 'table.dashboard.adm.php'; ?>
+    </main>
     <!-- Javascript for edit -->
     <script>
 
@@ -40,5 +41,8 @@
         document.getElementById(elementID).classList.toggle("is-active");
       }
     </script>
+
+    <?php include 'footer.adm.php' ?>
+
   </body>
 </html>
