@@ -17,7 +17,7 @@
         }
 
         echo "
-        <div class='column card is-two-fifths has-text-centered'>
+        <div class='column card is-one-quarter has-text-centered'>
            <div class='card-content'>
 
                 <figure class='image is-1by1'>
