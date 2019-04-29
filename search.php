@@ -1,5 +1,6 @@
 <?php
-include 'includes/dbh.inc.php';
+    include 'includes/session.inc.php';
+    require 'includes/dbh.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +15,10 @@ include 'includes/dbh.inc.php';
    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
+
+    <?php include 'nav.php' ?>
+
+    <main>
     <div class="container">
         <?php 
             if (isset($_POST['btnsearch'])) {
@@ -44,6 +49,8 @@ include 'includes/dbh.inc.php';
             
         ?>
     </div>
+    </main>
 
     <?php include 'footer.php' ?>
+
 </body>
