@@ -213,7 +213,7 @@
                 <!-- Bulma element goes here -->
                 <div class='card'>
                 <div class='card-content'>
-                    <form action='edit.adm.php?edit_id='$document_ID' method='POST'>
+                    <form action='edit.adm.php?edit_id={$document_ID}' method='POST'>
                     <!-- Edit Title -->
                     <div class='control'>
                         <label class='label'>Edit Title:</label>
