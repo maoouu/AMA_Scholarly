@@ -20,7 +20,12 @@
     <main class="section">
       <div class="container">
         <div class="column is-main-content">
-          <h1 class="title is-4">Contacts</h1> <br>
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="home">Home</a></li>
+              <li class="is-active"><a>Contacts</a></li>
+            </ul>
+          </nav> <br>
 
           <div class="columns is-multiline" style="padding-top:2%; padding-bottom:2%; padding-left:5%; padding-right:5%; background-color:white;">
             <!-- Message -->  
