@@ -21,6 +21,7 @@
     </div>
   </section>
 
+
   <section class="section">
   <div class="container">
   <div class="columns">
@@ -35,9 +36,13 @@
   </div>
 
   <!-- Main content -->
-  <div class="column is-main-content" style="background-color:white;">
-    
+  <div class="container has-text-centered">
+  <div class="column is-12 is-main-content" style="background-color:white;">
+    <img class="display:block; margin-left:auto; margin-right:auto; width:1em;" src="img/construction.png" alt="under_construction">
+    hello
   </div>
+  </div>
+
   </div>
   </div>
   </section>
