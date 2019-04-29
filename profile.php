@@ -16,7 +16,11 @@
 </head>
   <body>
     <?php include 'nav.php'; ?>
+    
+    <main>
+      <?php include 'profile_body.php'; ?>
+    </main>
 
-    <?php include 'profile_body.php'; ?>
+    <?php include 'footer.php'; ?>
   </body>
 </html>
