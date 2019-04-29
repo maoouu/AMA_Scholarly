@@ -18,8 +18,8 @@
 
     <?php include 'nav.adm.php' ?>
 
-    <main>
-    <div class="container">
+    
+    <div class="container" style="margin-top:5.6em">
         <?php 
             if (isset($_POST['btnsearch'])) {
                 $search = mysqli_real_escape_string($conn, $_POST['search']);
@@ -49,7 +49,7 @@
             
         ?>
     </div>
-    </main>
+    
 
     <?php include 'footer.adm.php' ?>
 
