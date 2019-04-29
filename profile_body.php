@@ -36,10 +36,16 @@
   </div>
 
   <!-- Main content -->
-  <div class="container has-text-centered">
+  <div class="container">
   <div class="column is-12 is-main-content" style="background-color:white;">
-    <img class="display:block; margin-left:auto; margin-right:auto; width:1em;" src="img/construction.png" alt="under_construction">
-    hello
+    <form action="includes/profile-custom-update" method="post">
+          <!-- still to be implemented -->
+    </form>
+    <div class="has-text-centered">
+    <img class="image" style="display:block; margin-left:auto; margin-right:auto; width:10em;" src="img/construction.png" alt="under_construction">
+    <p class="title is-3">Oops!</p>
+    <p class="title is-6">Page is still in construction.</p>
+    </div>
   </div>
   </div>
 
