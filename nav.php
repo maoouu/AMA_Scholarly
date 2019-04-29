@@ -83,7 +83,7 @@ main{
 
               <!-- Dropdown Menu -->
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="profile">Profile</a>
+                <a class="navbar-item" href="profile">Profile (in construction)</a>
                 <hr class="navbar-divider">
                 <a class="navbar-item" href="includes/logout.inc">Logout</a>
               </div>
