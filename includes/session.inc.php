@@ -2,6 +2,6 @@
   session_start();
 
   if (!isset($_SESSION["ID"])) {
-    header('Location: ../prog-project/');
+    header('Location: ../AMA_Scholarly/');
   }
  ?>
