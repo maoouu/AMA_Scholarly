@@ -25,26 +25,47 @@
         include 'nav.php';
     ?>
 
-    <div class="section">
+    <main class="section">
         <div class="container">
-            <div class="columns">
+            <div class="columns is-multiline">
                 <div class="column">
                 <?php
                     if ($_SESSION["title"]) {
                         $title = $_SESSION["title"]."%";
                         $sql = "SELECT * FROM Metadata WHERE db_title LIKE '$title'";
                         $query = mysqli_query($conn, $sql);
+                        $numRows = mysqli_num_rows($query);
+                        
+                        
+                        /*
+                        if ($numRows > 0) {
+                            while ($row = mysqli_fetch_array($query)) {
+                                $row_Title = $row['db_title'];
+                                echo $row_Title;
+                                echo ", it works";
+                            } //(to be fckn continued)
+                        } else {
+                            echo "error";
+                        } */
+                        
 
-                        if (!(mysqli_fetch_array($query))) {
+                        
+                        if (!($numRows > 0)) {
                             echo "<p class='title'>No results found</p> <br>
                             Click <a href='browse'>here</a> to go back to browse";
                         } else {
+                           // echo "it works";
+                            
                             while ($row = mysqli_fetch_array($query)) {
+                                //echo "while loop works as well";
+
                                 $row_ID = $row['db_ID'];
                                 $row_Title = $row['db_title'];
                                 $row_Category = $row['db_category'];
                                 $row_Date = new DateTime($row['db_date']);
                                 $document_date = date_format($row_Date, "M. Y");
+
+                                //echo "this loads fine";
 
                                 echo 
                                 "
@@ -72,16 +93,17 @@
                                     </footer>
                                 </div>
                                 ";
-                            }
-                        }
+                            } 
+                        } 
                     }
 
                     if ($_SESSION["category"]) {
                         $category = $_SESSION["category"];
                         $sql = "SELECT * FROM Metadata WHERE db_category = '$category'";
                         $query = mysqli_query($conn, $sql);
+                        $numRows = mysqli_num_rows($query);
 
-                        if (!(mysqli_fetch_array($query))) {
+                        if (!($numRows > 0)) {
                             echo "<p class='title'>No results found</p> <br>
                             Click <a href='browse'>here</a> to go back to browse";
                         } else {
@@ -131,13 +153,16 @@
                             echo "<p class='title'>No results found</p> <br>
                             Click <a href='browse'>here</a> to go back to browse";
                         } else {
+                            //echo "else works";
                             while ($row = mysqli_fetch_array($query)) {
+                                //echo "while loop works";
                                 $row_ID = $row['db_ID'];
                                 $row_Title = $row['db_title'];
                                 $row_Category = $row['db_category'];
                                 $row_Date = new DateTime($row['db_date']);
                                 $document_date = date_format($row_Date, "M. Y");
 
+                                //echo "variables loaded properly";
                                 echo 
                                 "
                                 <div class='column card is-two-fifths has-text-centered'>
@@ -171,7 +196,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <?php include 'footer.php' ?>
 
     
   </body>  
