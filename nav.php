@@ -11,7 +11,7 @@
 }
 
 main{
-    margin-top: 3.4em;
+    margin-top: 3.5em;
 }
 </style>
 
@@ -43,7 +43,7 @@ main{
           <a class="navbar-item" href="contacts">Contacts</a>
 
           <!-- Search Bar (Still at work)--> 
-          <form class="navbar-item field is-grouped is-flex-desktop" action="search.php" method="POST">
+          <form class="navbar-item field is-grouped is-flex-desktop" action="search" method="POST">
             <p class="control">
               <input class="input is-rounded" type="text" name="search" placeholder="Search... (still in development~)" maxlength="255">
             </p>
@@ -83,6 +83,8 @@ main{
 
               <!-- Dropdown Menu -->
               <div class="navbar-dropdown">
+                <a class="navbar-item" href="profile">Profile</a>
+                <hr class="navbar-divider">
                 <a class="navbar-item" href="includes/logout.inc">Logout</a>
               </div>
 
