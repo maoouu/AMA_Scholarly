@@ -20,5 +20,7 @@
     <main>
       <?php include 'page-content.php' ?>
     </main>
+
+    <?php include 'footer.php' ?>
   </body>
 </html>
