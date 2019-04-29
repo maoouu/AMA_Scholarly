@@ -18,8 +18,10 @@
   <body>
     <?php include 'nav.adm.php'; ?>
     
-    <?php include 'upload.dashboard.adm.php'; ?>
-
+    <main>
+      <?php include 'upload.dashboard.adm.php'; ?>
+    </main>
+    
     <!-- "Get wrecked this javascript code that I made" -(Dale) -->
     <script defer src="../js/select.js"></script>
     <script defer src="../js/citation.js"></script>
@@ -33,5 +35,8 @@
         }
       }
     </script>
+
+    <?php include 'footer.adm.php' ?>
+
   </body>
 </html>
