@@ -21,14 +21,25 @@
     </div>
   </section>
 
-  <div class="column">
+  <section class="section">
+  <div class="container">
+  <div class="columns">
+      <!-- Side menu -->
+  <div class="column is-2 is-sidebar-menu">
     <aside class="menu">
       <p class="menu-label">User Menu</p>
       <ul class="menu-list">
-        <li><a>Requests</a></li>
-        <li><a>Settings</a></li>
+        <li><a class="is-active">Settings</a></li>
       </ul>
     </aside>
   </div>
+
+  <!-- Main content -->
+  <div class="column is-main-content" style="background-color:white;">
+    
+  </div>
+  </div>
+  </div>
+  </section>
 
 </div>
