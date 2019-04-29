@@ -13,7 +13,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Results | AMA Scholarly</title>
+    <title>U N U | AMA Scholarly</title>
     <link rel="stylesheet" href="css/bulma.css"> <!-- use min.css at the final -->
     <link rel="stylesheet" href="css/manual.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
@@ -51,8 +51,8 @@
 
                         
                         if (!($numRows > 0)) {
-                            echo "<p class='title'>No results found</p> <br>
-                            Click <a href='browse'>here</a> to go back to browse";
+                            echo "<div class='container has-text-centered'><img class='image' src='img/error.png' style='width:20em; margin-top:5em; margin-bottom:5em; display:block; margin-left:auto; margin-right:auto;'><br><p class='title'>No results found</p> <br>
+                            Click <a href='browse'>here</a> to go back to browse</div>";
                         } else {
                            // echo "it works";
                             
@@ -104,8 +104,8 @@
                         $numRows = mysqli_num_rows($query);
 
                         if (!($numRows > 0)) {
-                            echo "<p class='title'>No results found</p> <br>
-                            Click <a href='browse'>here</a> to go back to browse";
+                            echo "<div class='container has-text-centered'><img class='image' src='img/error.png' style='width:20em; margin-top:5em; margin-bottom:5em; display:block; margin-left:auto; margin-right:auto;'><br><p class='title'>No results found</p> <br>
+                            Click <a href='browse'>here</a> to go back to browse</div>";
                         } else {
                             while ($row = mysqli_fetch_array($query)) {
                                 $row_ID = $row['db_ID'];
@@ -150,8 +150,8 @@
                         $query = mysqli_query($conn, $sql);
 
                         if (!(mysqli_fetch_array($query))) {
-                            echo "<p class='title'>No results found</p> <br>
-                            Click <a href='browse'>here</a> to go back to browse";
+                            echo "<div class='container has-text-centered'><img class='image' src='img/error.png' style='width:20em; margin-top:5em; margin-bottom:5em; display:block; margin-left:auto; margin-right:auto;'><br><p class='title'>No results found</p> <br>
+                            Click <a href='browse'>here</a> to go back to browse</div>";
                         } else {
                             //echo "else works";
                             while ($row = mysqli_fetch_array($query)) {
