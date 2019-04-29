@@ -69,6 +69,7 @@ main{
 
               <!-- Dropdown Menu -->
               <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">Requests</a>
                 <a class="navbar-item" href="../includes/logout.inc.php">Logout</a>
               </div>
 
