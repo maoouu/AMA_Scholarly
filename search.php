@@ -18,8 +18,10 @@
 
     <?php include 'nav.php' ?>
 
-    <main>
+    <main style="margin-top:5.5em;">
     <div class="container">
+    <div class="columns">
+    <div class="column">
         <?php 
             if (isset($_POST['btnsearch'])) {
                 $search = mysqli_real_escape_string($conn, $_POST['search']);
@@ -37,10 +39,38 @@
                 if ($queryResult > 0) {
                     echo "About " . "<strong>" .$queryResult . "</strong>" . " result/s." . "<br>";
                     while ($row = mysqli_fetch_assoc($result)) {
-                        echo "<br><div>
-                            <h3>".$row['db_title']."</h3>
-                            <p>".$row['db_category']."</p>
-                        </div> <br>";
+                        $row_ID = $row['db_ID'];
+                        $row_Title = $row['db_title'];
+                        $row_Category = $row['db_category'];
+                        $row_Date = new DateTime($row['db_date']);
+                        $document_date = date_format($row_Date, "M. Y");
+
+                        echo 
+                        "
+                        <div class='column card is-one-quarter has-text-centered'>
+                            <div class='card-content'>
+
+                                    <figure class='image is-1by1'>
+                                        <a href='includes/previewprocess.inc.php?id=$row_ID'><img src='https://via.placeholder.com/100x150.png'></a>
+                                    </figure> <br>
+
+                                    <a class='title is-6' href='includes/previewprocess.inc.php?id=$row_ID'>
+                                        $row_Title
+                                    </a>
+                            </div>
+
+                            <footer class='card-footer'>
+                                    <p class='card-footer-item'>
+                                        Category: <a href='#'>$row_Category</a>
+                                    </p>
+                                    <p class='card-footer-item'>"
+                                        
+                                    . $document_date .
+                                        
+                                    "</p>
+                            </footer>
+                        </div> <br>
+                        ";
                     }
                 } else {
                     echo "There are no results matching your search.";
@@ -48,6 +78,8 @@
             }
             
         ?>
+    </div>
+    </div>
     </div>
     </main>
 
