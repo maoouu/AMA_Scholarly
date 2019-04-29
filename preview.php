@@ -37,5 +37,8 @@
         alert("Copied to clipboard!");
       }
     </script>
+
+    <?php include 'footer.php' ?>
+
   </body>
 </html>
