@@ -43,7 +43,7 @@ main{
           <a class="navbar-item" href="contacts">Contacts</a>
 
           <!-- Search Bar (Still at work)--> 
-          <div class="navbar-item field is-grouped is-flex-desktop">
+          <form class="navbar-item field is-grouped is-flex-desktop" action="search.php" method="POST">
             <p class="control">
               <input class="input is-rounded" type="text" name="search" placeholder="Search... (still in development~)" maxlength="255">
             </p>
@@ -51,7 +51,7 @@ main{
             <p class="control">
               <button class="button is-info" type="submit" name="btnsearch">Search</button>
             </p>
-          </div>
+          </form>
 
         </div>
 
@@ -60,18 +60,18 @@ main{
           <div class="navbar-item has-dropdown is-hoverable">
             <!-- Profile Picture-->
             <div class="navbar-item image is-54x54">
-                    <?php
-                      $imageLocation = "<img class='is-rounded' src='profile-pic/";
-                      $displayName = $_SESSION['fullname'] . ".jpg'>";
-                      $file = "profile-pic/" . $_SESSION['fullname'] . ".jpg";
-                      $defaultName = "default.png'>";
+              <?php
+                $imageLocation = "<img class='is-rounded' src='profile-pic/";
+                $displayName = $_SESSION['fullname'] . ".jpg'>";
+                $file = "profile-pic/" . $_SESSION['fullname'] . ".jpg";
+                $defaultName = "default.png'>";
                       
-                      if(file_exists($file)){ 
-                        echo $imageLocation . $displayName;
-                      } else {
-                        echo $imageLocation . $defaultName;
-                      }
-                    ?>
+                if(file_exists($file)){ 
+                  echo $imageLocation . $displayName;
+                } else {
+                  echo $imageLocation . $defaultName;
+                }
+              ?>
             </div>
               <div class="navbar-link">
                 <a href="profile" style="color:inherit;">
