@@ -86,7 +86,7 @@ switch ($author_count) {
             case '1':
                 $citation_input = $author_lastname1 . ", " . substr(ltrim($author_firstname1), 0, 1) .
                 "., " . $author_lastname2 . ", " . substr(ltrim($author_firstname2), 0, 1) .
-                ". " . $author_lastname3 . ", " .substr(ltrim($author_firstname3), 0, 1) . ". (" . date("Y") . "). " . $_POST['document_title'] . ". " . 
+                "., " . $author_lastname3 . ", " .substr(ltrim($author_firstname3), 0, 1) . ". (" . date("Y") . "). " . $_POST['document_title'] . ". " . 
                 "AMA Computer College Lucena, Lucena City, Philippines.";
                 break;
             case '2':
@@ -118,8 +118,8 @@ switch ($author_count) {
             case '1': // APA
                 $citation_input = $author_lastname1 . ", " . substr(ltrim($author_firstname1), 0, 1) .
                 "., " . $author_lastname2 . ", " . substr(ltrim($author_firstname2), 0, 1) .
-                ". " . $author_lastname3 . ", " .substr(ltrim($author_firstname3), 0, 1) . 
-                ". " . $author_lastname4 . ", " .substr(ltrim($author_firstname4), 0, 1) .". (" . date("Y") . "). " . $_POST['document_title'] . ". " . 
+                ".,, " . $author_lastname3 . ", " .substr(ltrim($author_firstname3), 0, 1) . 
+                ".,, " . $author_lastname4 . ", " .substr(ltrim($author_firstname4), 0, 1) .". (" . date("Y") . "). " . $_POST['document_title'] . ". " . 
                 "AMA Computer College Lucena, Lucena City, Philippines.";
                 break;
             case '2': // MLA
@@ -153,9 +153,9 @@ switch ($author_count) {
             case '1':
                 $citation_input = $author_lastname1 . ", " . substr(ltrim($author_firstname1), 0, 1) .
                 "., " . $author_lastname2 . ", " . substr(ltrim($author_firstname2), 0, 1) .
-                ". " . $author_lastname3 . ", " .substr(ltrim($author_firstname3), 0, 1) . 
-                ". " . $author_lastname4 . ", " .substr(ltrim($author_firstname4), 0, 1) .
-                ". " . $author_lastname5 . ", " .substr(ltrim($author_firstname5), 0, 1) . ". (" . date("Y") . "). " . $_POST['document_title'] . ". " . 
+                ".,,, " . $author_lastname3 . ", " .substr(ltrim($author_firstname3), 0, 1) . 
+                ".,,, " . $author_lastname4 . ", " .substr(ltrim($author_firstname4), 0, 1) .
+                ".,,, " . $author_lastname5 . ", " .substr(ltrim($author_firstname5), 0, 1) . ". (" . date("Y") . "). " . $_POST['document_title'] . ". " . 
                 "AMA Computer College Lucena, Lucena City, Philippines.";
                 break;
             case '2':
@@ -191,10 +191,10 @@ switch ($author_count) {
             case '1':
                 $citation_input = $author_lastname1 . ", " . substr(ltrim($author_firstname1), 0, 1) .
                 "., " . $author_lastname2 . ", " . substr(ltrim($author_firstname2), 0, 1) .
-                ". " . $author_lastname3 . ", " .substr(ltrim($author_firstname3), 0, 1) . 
-                ". " . $author_lastname4 . ", " .substr(ltrim($author_firstname4), 0, 1) .
-                ". " . $author_lastname5 . ", " .substr(ltrim($author_firstname5), 0, 1) . 
-                ". " . $author_lastname6 . ", " .substr(ltrim($author_firstname6), 0, 1) . ". (" . date("Y") . "). " . $_POST['document_title'] . ". " . 
+                "., " . $author_lastname3 . ", " .substr(ltrim($author_firstname3), 0, 1) . 
+                "., " . $author_lastname4 . ", " .substr(ltrim($author_firstname4), 0, 1) .
+                "., " . $author_lastname5 . ", " .substr(ltrim($author_firstname5), 0, 1) . 
+                "., " . $author_lastname6 . ", " .substr(ltrim($author_firstname6), 0, 1) . ". (" . date("Y") . "). " . $_POST['document_title'] . ". " . 
                 "AMA Computer College Lucena, Lucena City, Philippines.";
                 break;
             case '2':
