@@ -3,6 +3,16 @@
   height: 54px;
   width: 54px;
 }
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+main{
+    margin-top: 3.4em;
+}
 </style>
 
 <nav class="navbar has-shadow is-spaced">
@@ -17,6 +27,17 @@
         <div class="navbar-start">
 
           <p class="navbar-item">Admin Page (Alpha)</p>
+
+          <!-- Search Bar (Still at work)--> 
+          <form class="navbar-item field is-grouped is-flex-desktop" action="admin-search" method="POST">
+            <p class="control">
+              <input class="input is-rounded" type="text" name="search" placeholder="Search... (still in development~)" maxlength="255">
+            </p>
+
+            <p class="control">
+              <button class="button is-info" type="submit" name="btnsearch">Search</button>
+            </p>
+          </form>
 
         </div>
 
