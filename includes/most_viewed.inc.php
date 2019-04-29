@@ -22,7 +22,7 @@
         }
 
         echo "
-        <div class='column card is-two-fifths card has-text-centered'>
+        <div class='column card is-one-quarter card has-text-centered'>
            <div class='card-content'>
                 <figure class='image is-1by1'>
                     <a href='includes/previewprocess.inc.php?id=$row_ID'><img src='https://via.placeholder.com/100x150.png'></a>
