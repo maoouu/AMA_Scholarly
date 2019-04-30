@@ -168,10 +168,10 @@
             echo 
             "<tbody>
                 <tr id='document_$document_ID'>
-                    <td><a  class='documet-title' onclick='showDetails($document_ID)'>" . $row['db_title'] . "</a></td>" .
-                    "<td class='documet-authors'>" . $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'] . ", " . $row['db_authorFirstName2']. " ". $row['db_authorLastName2'] . ", " . $row['db_authorFirstName3'] . " " . $row['db_authorLastName3'] . ",..." ."</td>" . 
-                    "<td class='documet-category'>" . $row['db_category'] . "</td>". 
-                    "<td class='documet-date'>" . $row['db_date'] ."</td>". 
+                    <td><a  class='document-title' onclick='showDetails($document_ID)'>" . $row['db_title'] . "</a></td>" .
+                    "<td class='document-authors'>" . $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'] . ", " . $row['db_authorFirstName2']. " ". $row['db_authorLastName2'] . ", " . $row['db_authorFirstName3'] . " " . $row['db_authorLastName3'] . ",..." ."</td>" . 
+                    "<td class='document-category'>" . $row['db_category'] . "</td>". 
+                    "<td class='document-date'>" . $row['db_date'] ."</td>". 
                     "<td><a onclick='showEdit($document_ID)'>" . "Edit" . "</a></td>" . 
                     "<td><a onclick='showDelete($document_ID)'>" . "Delete" . "</a></td>
                 </tr>
