@@ -32,7 +32,7 @@
         </table>
 
         <!-- Modal for document preview -->
-        <div id="show_$document_ID" class="modal">
+        <div id="show_document" class="modal">
           <div class="modal-background"></div>
           <div class="modal-content">
               <!-- Bulma element goes here -->
@@ -41,17 +41,17 @@
                       <h6 class="title is-6">Details</h6> <hr>
 
                       <label class="label">Title: </label> 
-                      <p>$document_title</p> <br>
+                      <p class="document-title"></p></p> <br>
                       <label class="label">Authors: </label> 
-                      <p>$document_author</p> <br>
+                      <p class="document-authors"></p> <br>
                       <label class="label">Category: </label> 
-                      <p>$document_category</p> <br>
+                      <p class="document-category"></p> <br>
                       <label class="label">Date Created: </label> 
-                      <p>$document_date</p>
+                      <p class="document-date"></p>
                   </div>
               </div>
           </div>
-          <button class="modal-close is-large" aria-aria-label="close" onclick="showDetails($document_ID)"></button>
+          <button class="modal-close is-large" aria-aria-label="close" onclick="showDetails()"></button>
         </div>
 
         <!-- Modal for edit button -->
