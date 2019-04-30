@@ -55,19 +55,19 @@
         </div>
 
         <!-- Modal for edit button -->
-        <div id="edit_$document_ID" class="modal">
+        <div id="edit_document" class="modal">
           <div class="modal-background"></div>
           <div class="modal-content">
               <!-- Bulma element goes here -->
               <div class="card">
                 <div class="card-content">
-                    <form action="edit.adm.php?edit_id={$document_ID}" method="POST">
+                    <form data-action="edit.adm.php?edit_id=" method="POST" class="document-form">
                       <!-- Edit Title -->
                       <div class="control">
                           <label class="label">Edit Title:</label>
                           <div class="field">
                               <div class="control">
-                                  <input type="text" class="input" name="edit_title" placeholder="$document_title" required>
+                                  <input type="text" class="input document-title" name="edit_title" required>
                               </div>
                           </div>
                       </div>
@@ -77,7 +77,7 @@
                           <label class="label">Edit Author (Will be available in future updates)</label>
                           <div class="field">
                               <div class="control">
-                                  <input type="text" class="input" name="edit_author" placeholder="$document_author" disabled>
+                                  <input type="text" class="input document-authors" name="edit_author" disabled>
                               </div>
                           </div>
                       </div>
@@ -87,7 +87,7 @@
                           <label class="label">Edit Category:</label>
                           <div class="field">
                               <div class="control">
-                                  <input type="text" class="input" name="edit_category" placeholder="$document_category" required>
+                                  <input type="text" class="input document-category" name="edit_category" required>
                               </div>
                           </div>
                       </div>
@@ -98,7 +98,7 @@
                               <button id="submit" class="button is-link" type="submit" name="btnsubmit" disabled>Submit</button>
                           </div>
                           <div class="control">
-                              <a class="button is-text" onclick="showEdit($document_ID)">Cancel</a>
+                              <a class="button is-text" onclick="showEdit()">Cancel</a>
                           </div>
                       </div>
                     </form>
@@ -106,7 +106,7 @@
               </div>
               <!--#########################-->
           </div>
-          <button class="modal-close is-large" aria-aria-label="close" onclick="showEdit($document_ID)"></button>
+          <button class="modal-close is-large" aria-aria-label="close" onclick="showEdit()"></button>
         </div>
         <!--#########################-->
         
