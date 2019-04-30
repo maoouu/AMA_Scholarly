@@ -63,9 +63,13 @@
       }
 
       function showDelete($document_ID) {
-        var elementID = "delete_" + $document_ID;
+        let modal = document.getElementById('delete_document');
+        // if is not null generate the modal
+        if ($document_ID>0) {
+          // edit when it can be deleted
+        }
         // This will open and close the modal
-        document.getElementById(elementID).classList.toggle("is-active");
+        modal.classList.toggle("is-active");
       }
     </script>
 
