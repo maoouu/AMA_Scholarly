@@ -165,14 +165,16 @@
 
             // Table Content
             echo 
-            "<tbody><tr>
-            <td><a onclick='showDetails($document_ID)'>" . $row['db_title'] . "</a></td>" .
-            "<td>" . $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'] . ", " . $row['db_authorFirstName2']. " ". $row['db_authorLastName2'] . ", " . $row['db_authorFirstName3'] . " " . $row['db_authorLastName3'] . ",..." ."</td>" . 
-            "<td>" . $row['db_category'] . "</td>". 
-            "<td>" . $row['db_date'] ."</td>". 
-            "<td><a onclick='showEdit($document_ID)'>" . "Edit" . "</a></td>" . 
-            "<td><a onclick='showDelete($document_ID)'>" . "Delete" . "</a></td>
-            </tr></tbody>";
+            "<tbody>
+                <tr id='document_$document_ID'>
+                    <td class='documet-title'><a onclick='showDetails($document_ID)'>" . $row['db_title'] . "</a></td>" .
+                    "<td class='documet-authors'>" . $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'] . ", " . $row['db_authorFirstName2']. " ". $row['db_authorLastName2'] . ", " . $row['db_authorFirstName3'] . " " . $row['db_authorLastName3'] . ",..." ."</td>" . 
+                    "<td class='documet-category'>" . $row['db_category'] . "</td>". 
+                    "<td class='documet-date'>" . $row['db_date'] ."</td>". 
+                    "<td><a onclick='showEdit($document_ID)'>" . "Edit" . "</a></td>" . 
+                    "<td><a onclick='showDelete($document_ID)'>" . "Delete" . "</a></td>
+                </tr>
+            </tbody>";
         }
 
     } else {
