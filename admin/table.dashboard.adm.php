@@ -41,7 +41,7 @@
                       <h6 class="title is-6">Details</h6> <hr>
 
                       <label class="label">Title: </label> 
-                      <p class="document-title"></p></p> <br>
+                      <p class="document-title"></p> <br>
                       <label class="label">Authors: </label> 
                       <p class="document-authors"></p> <br>
                       <label class="label">Category: </label> 
