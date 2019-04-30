@@ -43,9 +43,23 @@
       }
 
       function showEdit($document_ID) {
-        var elementID = "edit_" + $document_ID;
+        let modal    = document.getElementById('edit_document');
+        // if is not null generate the modal
+        if ($document_ID>0) {
+          let edit = document.getElementById('document_' + $document_ID);
+          let edit_title = edit.querySelector('.document-title').innerText;
+          let edit_authors = edit.querySelector('.document-authors').innerText;
+          let edit_category = edit.querySelector('.document-category').innerText;
+          //
+          let action = modal.querySelector('.document-form').dataset.action;
+          modal.querySelector('.document-form').action = action + $document_ID;
+          // these steps is change the placeholder value
+          modal.querySelector('.document-title').placeholder = edit_title;
+          modal.querySelector('.document-authors').placeholder = edit_authors;
+          modal.querySelector('.document-category').placeholder = edit_category;
+        }
         // This will open and close the modal
-        document.getElementById(elementID).classList.toggle("is-active");
+        modal.classList.toggle("is-active");
       }
 
       function showDelete($document_ID) {
