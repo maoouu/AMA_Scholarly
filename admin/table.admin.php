@@ -26,7 +26,7 @@
       function showDetails($document_ID) {
         let modal    = document.getElementById('show_document');
         // if is not null generate the modal
-        if ($document_ID!==null) {
+        if ($document_ID>0) {
           let table = document.getElementById('document_' + $document_ID);
           let table_title = table.querySelector('.document-title').innerText;
           let table_authors = table.querySelector('.document-authors').innerText;
