@@ -164,6 +164,7 @@
 
 
             // Table Content
+            // For get data just find #document_{id}, and then get the class .document-{tilte,authors,category,date}
             echo 
             "<tbody>
                 <tr id='document_$document_ID'>
