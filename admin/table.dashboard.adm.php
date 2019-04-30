@@ -111,7 +111,7 @@
         <!--#########################-->
         
         <!-- Modal for delete button -->
-        <div id="delete_$document_ID" class="modal">
+        <div id="delete_document" class="modal">
           <div class="modal-background"></div>
           <div class="modal-content">
               <!-- Bulma element goes here -->
@@ -122,7 +122,7 @@
               </div>
               <!--#########################-->
           </div>
-          <button class="modal-close is-large" aria-aria-label="close" onclick="showDelete($document_ID)"></button>
+          <button class="modal-close is-large" aria-aria-label="close" onclick="showDelete()"></button>
         </div>
         <!--#########################-->
 
