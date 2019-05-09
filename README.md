@@ -27,6 +27,10 @@ To-Do Notes:
 * Profile page for user.
 * Requests page for admin.
 
+Update Notes (May. 9 2019)
+* Sorry for the abscence of current updates, because of current life events and other things.
+I'll be sure to be back after all of this is done. Much love~
+
 Update Notes (Mar. 30-31, 2019)
 * Fixed up bugs
 * Fixed admin upload documents
