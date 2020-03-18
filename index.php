@@ -7,61 +7,58 @@
 
 ?>
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AMA Scholarly | Make Research, accessible!</title>
-    <link rel="stylesheet" href="css/bulma.css"> <!-- use min.css at the final -->
-    <link rel="stylesheet" href="fontawesome/css/all.css">
-    <link rel="icon" href="img/amau_logo.png">
-    <script defer src="fontawesome/js/all.js"></script>
-  </head>
-  <body>
-    <!-- Form -->
-    <div class="level">
+<html lang="en">
 
-      <div class="level-left column" style="padding: 100px 0px;">
-        <section class="section">
-          <form action="includes/process.inc.php" method="post">
-            <!-- USN -->
-            <div class="field">
-              <div class="control has-icons-left">
-                <input class="input" type="text" name="USN" placeholder="USN" maxlength="11">
-                <span class="icon is-small is-left">
-                  <i class="far fa-user"></i>
-                </span>
-              </div>
-            </div>
-            <!-- Password -->
-            <div class="field">
-              <div class="control has-icons-left">
-                <input class="input" type="password" name="password" placeholder="password">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-lock-open"></i>
-                </span>
-              </div>
-            </div>
-            <!-- Button -->
-            <div class="field is-grouped">
-              <div class="control">
-                <button class="button is-link" type="submit" name="btnsubmit">Login</button>
-              </div>
-              <div class="control">
-                <a class="button is-text"href="signup">Signup</a>
-              </div>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMA Scholarly | Make Research, accessible!</title>
+  <link rel="stylesheet" href="css/bulma.css"> <!-- use min.css at the final -->
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="icon" href="img/amau_logo.png">
+  <script defer src="fontawesome/js/all.js"></script>
+</head>
 
-          </form>
-        </section>
-      </div>
+<body>
 
-      <!-- AMA Scholarly Logo -->
-      <img class="level-right column is-three-fifths" src="img/ama_scholarly_copy.png" alt="AMA Scholarly Icon">
+  <!--    HEADER      -->
+  <container class="columns is-mobile is-centered">
+    <img class="column is-one-fifth" src="img/ama_scholarly_copy.png" alt="AMA Scholarly Icon">
+  </container>
 
-      
+  <!--    FORM    -->
+  <container class="columns is-mobile is-centered">
+    <form class="column is-one-third" action="includes/process.inc.php" method="post">
+      <fieldset class="columns">
 
-    </div>
+        <!--    USN FIELD   -->
+        <field class="field">
+          <control class="control has-icons-left">
+            <input class="input" type="text" name="USN" placeholder="USN" maxlength="11">
+            <span class="icon is-small is-left"><i class="far fa-user"></i></span>
+          </control>
+        </field>
 
-  </body>
+        <!--    Password    -->
+        <field class="field">
+          <control class="control has-icons-left">
+            <input class="input" type="password" name="password" placeholder="password">
+            <span class="icon is-small is-left"><i class="fas fa-lock-open"></i></span>
+          </control>
+        </field>
+
+        <!--    BUTTON     -->
+        <field class="field is-grouped">
+          <control class="column control is-grouped">
+            <button class="button is-link" type="submit" name="btnsubmit">Login</button>
+            <button class="button is-text" href="signup">Signup</button>
+          </control>
+        </field>
+
+      </fieldset>
+    </form>
+  </container>
+
+</body>
+
 </html>
