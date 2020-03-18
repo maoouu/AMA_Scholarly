@@ -1,9 +1,9 @@
 <?php
 
-  session_start();
-  if (isset($_SESSION["ID"])) {
-    header('Location: home');
-  }
+session_start();
+if (isset($_SESSION["ID"])) {
+  header('Location: home');
+}
 
 ?>
 <!DOCTYPE html>
@@ -29,7 +29,7 @@
   <!--    FORM    -->
   <container class="columns is-mobile is-centered">
     <form class="column is-one-third" action="includes/process.inc.php" method="post">
-      <fieldset class="columns">
+      <fieldset class="columns" style="border: 0;">
 
         <!--    USN FIELD   -->
         <field class="field">
@@ -51,7 +51,7 @@
         <field class="field is-grouped">
           <control class="column control is-grouped">
             <button class="button is-link" type="submit" name="btnsubmit">Login</button>
-            <button class="button is-text" href="signup">Signup</button>
+            <a class="button is-text" href="signup.php">Signup</a>
           </control>
         </field>
 
