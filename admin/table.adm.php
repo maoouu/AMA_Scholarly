@@ -164,125 +164,20 @@
 
 
             // Table Content
+            // For get data just find #document_{id}, and then get the class .document-{tilte,authors,category,date}
             echo 
-            "<tbody><tr>
-            <td><a onclick='showDetails($document_ID)'>" . $row['db_title'] . "</a></td>" .
-            "<td>" . $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'] . ", " . $row['db_authorFirstName2']. " ". $row['db_authorLastName2'] . ", " . $row['db_authorFirstName3'] . " " . $row['db_authorLastName3'] . ",..." ."</td>" . 
-            "<td>" . $row['db_category'] . "</td>". 
-            "<td>" . $row['db_date'] ."</td>". 
-            "<td><a onclick='showEdit($document_ID)'>" . "Edit" . "</a></td>" . 
-            "<td><a onclick='showDelete($document_ID)'>" . "Delete" . "</a></td>
-            </tr></tbody>";
-
-            // Document Details
-            echo "
-            
-            <!-- Modal for document preview -->
-            <div id='show_$document_ID' class='modal'>
-            <div class='modal-background'></div>
-            <div class='modal-content'>
-                <!-- Bulma element goes here -->
-
-                <div class='card'>
-                    <div class='card-content'>
-                        <h6 class='title is-6'>Details</h6> <hr>
-
-                        <label class='label'>Title: </label> 
-                        <p>$document_title</p> <br>
-                        <label class='label'>Authors: </label> 
-                        <p>$document_author</p> <br>
-                        <label class='label'>Category: </label> 
-                        <p>$document_category</p> <br>
-                        <label class='label'>Date Created: </label> 
-                        <p>$document_date</p>
-                    </div>
-                </div>
-
-            </div>
-            <button class='modal-close is-large' aria-aria-label='close' onclick='showDetails($document_ID)'></button>
-            </div>
-            ";
-
-            // Edit
-            echo 
-            "
-            <!-- Modal for edit button -->
-            <div id='edit_$document_ID' class='modal'>
-            <div class='modal-background'></div>
-            <div class='modal-content'>
-                <!-- Bulma element goes here -->
-                <div class='card'>
-                <div class='card-content'>
-                    <form action='edit.adm.php?edit_id='$document_ID' method='POST'>
-                    <!-- Edit Title -->
-                    <div class='control'>
-                        <label class='label'>Edit Title:</label>
-                        <div class='field'>
-                            <div class='control'>
-                                <input type='text' class='input' name='edit_title' placeholder='$document_title' required>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Edit Author/s -->
-                    <div class='control'>
-                        <label class='label'>Edit Author (Will be available in future updates)</label>
-                        <div class='field'>
-                            <div class='control'>
-                                <input type='text' class='input' name='edit_author' placeholder='$document_author' disabled>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Edit Category -->
-                    <div class='control'>
-                        <label class='label'>Edit Category:</label>
-                        <div class='field'>
-                            <div class='control'>
-                                <input type='text' class='input' name='edit_category' placeholder='$document_category' required>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Buttons -->
-                    <div class='field is-grouped'>
-                        <div class='control'>
-                            <button id='submit' class='button is-link' type='submit' name='btnsubmit' disabled>Submit</button>
-                        </div>
-                        <div class='control'>
-                            <a class='button is-text' onclick='showEdit($document_ID)'>Cancel</a>
-                        </div>
-                    </div>
-                    </form>
-                </div>
-                </div>
-                <!--#########################-->
-            </div>
-            <button class='modal-close is-large' aria-aria-label='close' onclick='showEdit($document_ID)'></button>
-            </div>
-            <!--#########################-->
-            ";
-
-            //Delete
-            echo "
-            
-            <!-- Modal for delete button -->
-            <div id='delete_$document_ID' class='modal'>
-            <div class='modal-background'></div>
-            <div class='modal-content'>
-                <!-- Bulma element goes here -->
-                <div class='card'>
-                <div class='card-content'>
-                    <p class='title is-6'> Not available to delete in current version </p>
-                </div>
-                </div>
-                <!--#########################-->
-            </div>
-            <button class='modal-close is-large' aria-aria-label='close' onclick='showDelete($document_ID)'></button>
-            </div>
-            <!--#########################-->
-            ";
+            "<tbody>
+                <tr id='document_$document_ID'>
+                    <td><a  class='document-title' onclick='showDetails($document_ID)'>" . $row['db_title'] . "</a></td>" .
+                    "<td class='document-authors'>" . $row['db_authorFirstName1'] ." ". $row['db_authorLastName1'] . ", " . $row['db_authorFirstName2']. " ". $row['db_authorLastName2'] . ", " . $row['db_authorFirstName3'] . " " . $row['db_authorLastName3'] . ",..." ."</td>" . 
+                    "<td class='document-category'>" . $row['db_category'] . "</td>". 
+                    "<td class='document-date'>" . $row['db_date'] ."</td>". 
+                    "<td><a onclick='showEdit($document_ID)'>" . "Edit" . "</a></td>" . 
+                    "<td><a onclick='showDelete($document_ID)'>" . "Delete" . "</a></td>
+                </tr>
+            </tbody>";
         }
+
     } else {
         echo "<tr><td>No results found</td></tr>";
     }

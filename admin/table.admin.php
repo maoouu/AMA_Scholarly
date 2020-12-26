@@ -24,21 +24,52 @@
     <script>
 
       function showDetails($document_ID) {
-        var elementID = "show_" + $document_ID;
+        let modal    = document.getElementById('show_document');
+        // if is not null generate the modal
+        if ($document_ID>0) {
+          let table = document.getElementById('document_' + $document_ID);
+          let table_title = table.querySelector('.document-title').innerText;
+          let table_authors = table.querySelector('.document-authors').innerText;
+          let table_category = table.querySelector('.document-category').innerText;
+          let table_date = table.querySelector('.document-date').innerText;
+          //
+          modal.querySelector('.document-title').innerText = table_title;
+          modal.querySelector('.document-authors').innerText = table_authors;
+          modal.querySelector('.document-category').innerText = table_category;
+          modal.querySelector('.document-date').innerText = table_date;
+        }
         // This will open and close the modal
-        document.getElementById(elementID).classList.toggle("is-active");
+        modal.classList.toggle("is-active");
       }
 
       function showEdit($document_ID) {
-        var elementID = "edit_" + $document_ID;
+        let modal    = document.getElementById('edit_document');
+        // if is not null generate the modal
+        if ($document_ID>0) {
+          let edit = document.getElementById('document_' + $document_ID);
+          let edit_title = edit.querySelector('.document-title').innerText;
+          let edit_authors = edit.querySelector('.document-authors').innerText;
+          let edit_category = edit.querySelector('.document-category').innerText;
+          //
+          let action = modal.querySelector('.document-form').dataset.action;
+          modal.querySelector('.document-form').action = action + $document_ID;
+          // these steps is change the placeholder value
+          modal.querySelector('.document-title').placeholder = edit_title;
+          modal.querySelector('.document-authors').placeholder = edit_authors;
+          modal.querySelector('.document-category').placeholder = edit_category;
+        }
         // This will open and close the modal
-        document.getElementById(elementID).classList.toggle("is-active");
+        modal.classList.toggle("is-active");
       }
 
       function showDelete($document_ID) {
-        var elementID = "delete_" + $document_ID;
+        let modal = document.getElementById('delete_document');
+        // if is not null generate the modal
+        if ($document_ID>0) {
+          // edit when it can be deleted
+        }
         // This will open and close the modal
-        document.getElementById(elementID).classList.toggle("is-active");
+        modal.classList.toggle("is-active");
       }
     </script>
 
